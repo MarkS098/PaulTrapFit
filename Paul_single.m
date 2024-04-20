@@ -29,8 +29,8 @@ E_DC = 4850*(V_mon - V_off); % Volt/Meter
 [chi_squared_max,expected_max,residuals_max,beta,beta_err] = LS_fit(E_DC,Z_max,z_err);
 
 charge_mass = (omega^2)*(beta^2)/(2*alpha)
-Z_eff1 = ((alpha*charge_mass*V_ac^2)/(2*gamma^2))^(1/4)
-Z_eff2 = sqrt((-beta*omega*V_ac)/(2*gamma))
+Z_eff1 = ((alpha*charge_mass*V_ac^2)/(2*gamma^2))^(1/4);
+Z_eff2 = sqrt((-beta*omega*V_ac)/(2*gamma));
 chi_squared_eq
 chi_squared_max
 
